@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR PROGRAM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body >
+    <div class="container">
+        <h1>CALCULATOR</h1>
+
+        <div class="row">
+            <div class="col-lg-12" id="mainrow" nopadding> 
+                <input type="text" name="calculation" id="calculation" class="form-control" style="padding: 10px; font-size: large; height: 50px; " placeholder="0";>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3" id="firstrow" nopadding>
+                <button type="button" value="7" class="btn btn-light waves-effect btn-block btn_font" onclick="UserClickButton('7')">7</button>
+            </div>
+            <div class="col-xs-3" id="firstrow" nopadding>
+                <button type="button" value="8" class="btn btn-light waves-effect btn-block btn_font"onclick="UserClickButton('8')">8</button>
+            </div>  
+            <div class="col-xs-3" id="firstrow" nopadding>
+                <button type="button" value="9" class="btn btn-light waves-effect btn-block btn_font"onclick="UserClickButton('9')">9</button>          
+            </div>  
+            <div class="col-xs-3" id="firstrow" nopadding>
+                <button type="button" value="+" class="operator btn btn-dark btn-block btn_font"onclick="UserClickButton('+')" style="background-color: black; color:white;">+</button>          
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3" id="secondrow" nopadding> 
+            <button type="button" value="4" class="btn btn-light waves-effect btn-block btn_font" onclick="UserClickButton('4')">4</button>
+            </div>
+            <div class="col-xs-3" id="secondrow" nopadding>
+                <button type="button" value="5" class="btn btn-light waves-effect btn-block btn_font"onclick="UserClickButton('5')">5</button>
+            </div> 
+            <div class="col-xs-3" id="secondrow" nopadding>
+                <button type="button" value="6" class="btn btn-light waves-effect btn-block btn_font"onclick="UserClickButton('6')">6</button>          
+            </div>
+            <div class="col-xs-3" id="secondrow" nopadding>
+                <button type="button" value="-" class="operator btn btn-dark btn-block btn_font"onclick="UserClickButton('-')" style="background-color: black; color:white;">-</button>          
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3" id="thirdrow" nopappding>
+                <button type="button" value="1" class="btn btn-light waves-effect btn-block btn_font" onclick="UserClickButton('1')">1</button>
+            </div>
+            <div class="col-xs-3" id="thirdrow" nopappding>
+                <button type="button" value="2" class="btn btn-light waves-effect btn-block btn_font "onclick="UserClickButton('2')">2</button>
+            </div>
+            <div class="col-xs-3" id="thirdrow" nopappding>
+                <button type="button" value="3" class="btn btn-light waves-effect btn-block btn_font"onclick="UserClickButton('3')">3</button>          
+            </div>
+            <div class="col-xs-3" id="thirdrow" nopappding>
+                <button type="button" value="x" class="operator btn btn-dark btn-block btn_font"onclick="UserClickButton('*')" style="background-color: black; color:white;">x</button>          
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3" id="forthrow" nopappding>
+                <button type="button" class="all-clear function btn btn-danger btn-sm btn-block btn_font" value="all-clear"onclick="ClearData()">C</button>
+            </div> 
+            <div class="col-xs-3" id="forthrow" nopappding>
+                <button type="button" value="0" class="btn btn-light waves-effect btn-block btn_font"onclick="UserClickButton('0')">0</button>
+            </div> 
+            <div class="col-xs-3" id="forthrow" nopappding>
+                <button type="button" value="=" class="operator btn btn-dark btn-block btn_font" onclick='CalculateValue()' style="background-color: black; color:white;">=</button>    
+            </div>
+            <div class="col-xs-3" id="forthrow" nopappding>          
+                <button type="button" value="/" class="operator btn btn-dark btn-block btn_font "onclick="UserClickButton('/')" style="background-color: black; color:white;">/</button>          
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Calculator.js"></script>
+</html>

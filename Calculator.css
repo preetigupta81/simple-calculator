@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 150px;
+    font-size: 30px;
+}
+.container{
+    height: 450px;
+    width: 250px;
+    padding: 30px;
+    border: 4px solid grey;
+    margin-top: 50px;
+    background: whitesmoke; 
+    box-shadow: 5px 5px #525252;  
+    border-radius: 10px;
+    border-style: groove;
+}
+input{ 
+    text-align: right;
+    border-style: 4px solid black;
+    background-color: white;
+    color: black;  
+    cursor:auto;
+}
+.nopadding{
+    padding: 0px;
+}
+.btn_font{
+    font-size: 30px;
+}
+#firstrow{
+    padding: 2px;
+    background-color: white;
+}
+#secondrow{
+    padding: 2px;
+    background-color: white;
+}
+#thirdrow{
+    padding: 2px;
+    background-color: white;
+}
+#forthrow{
+    padding: 2px;
+    background-color: white;
+}
